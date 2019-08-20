@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<body>
+  <head>
+    <meta charset="utf-8">
+    <title>Formulario</title>
+    <h1>Formulario para capturar metas.</h1>
+    <form action="form.html">
+      <label for="meta">Meta: </label>
+      <input type="text" name="meta"><br>
+      <br>
+      <label for="descripcion">Descripción: </label><br>
+      <textarea name="descripcion" rows="10" cols="60"></textarea><br>
+      <br>
+        <label for="plazo">Plazo </label>
+        <select name="plazo">
+          <optgroup label="años para realizarlo">
+            <option value="1">1 año</option>
+            <option value="3">3 años</option>
+            <option value="5">5 años</option>
+            <option value="10">10 años</option>
+          </optgroup>
+        </select>
+      <br>
+  		<input type="radio" name="indispensable" value="i">Indispensable.<br>
+  		<input type="radio" name="puedo" value="p">Puedo vivir sin ello.<br>
+      <br>
+  		<label for="realizarlo">Puedo realizarlo:</label><br>
+  		<input type="checkbox" name="durante">
+  		<label for="durante">Durante la carrera.</label><br>
+  		<input type="checkbox" name="despues">
+  		<label for="despues">Después de la carrera.</label><br>
+      <br>
+      <label for="codigo">Código: </label>
+      <!--<input type="hidden" name="codigo" value="4">-->
+      <input type="text" name="codigo"><br>
+      <br>
+      <button type="submit">Crear meta</button>
+    </form>
+  </head>
+    <br>
+    <a href="index.html">Regresar al inicio.</a>
+  </body>
+</html>
